@@ -1,0 +1,147 @@
+* {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #121212;
+      color: white;
+    }
+
+    header {
+      background-color: #1f1f1f;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #333;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+    }
+
+     header h1 a{
+        color: white;
+        text-decoration: none;
+     }
+
+    .login-btn {
+      background-color: transparent;
+      color: white;
+      border: 2px solid white;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .filter-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      padding: 1rem 2rem;
+      background-color: #1a1a1a;
+      border-bottom: 1px solid #333;
+    }
+
+    .filter-bar select,
+    .filter-bar input[type="text"] {
+      padding: 0.5rem;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+    }
+
+    .user-list {
+      padding: 2rem;
+      display: grid;
+      gap: 1.5rem;
+    }
+
+    .card {
+      background-color: #1f1f1f;
+      padding: 1rem;
+      border-radius: 10px;
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .profile-photo {
+      width: 70px;
+      height: 70px;
+      background-color: #333;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    .card-content {
+      flex: 1;
+    }
+
+    .card-content h3 {
+      margin: 0 0 0.5rem;
+    }
+
+    .skills {
+      margin-bottom: 0.5rem;
+    }
+
+    .skills span {
+      background-color: #2a2a2a;
+      padding: 0.3rem 0.6rem;
+      margin: 0.2rem;
+      border-radius: 15px;
+      display: inline-block;
+    }
+
+    .request-btn {
+      background-color: teal;
+      border: none;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .rating {
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+
+    .pagination {
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .pagination span {
+      padding: 0.5rem 0.8rem;
+      margin: 0 0.2rem;
+      background-color: #333;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .pagination .active {
+      background-color: teal;
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .card-content {
+        width: 100%;
+      }
+
+      .filter-bar {
+        flex-direction: column;
+        align-items: stretch;
+      }
+    }
